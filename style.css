@@ -61,7 +61,7 @@ h1{
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 5rem;
 }
 
@@ -83,6 +83,17 @@ p {
 img {
   width: 60rem;
   margin-left: 9rem;
+}
+
+.wrapp-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapp-image img{
+  display: flex;
+  flex-direction: row;
+  
 }
 
 form {
