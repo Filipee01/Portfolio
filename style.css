@@ -120,7 +120,7 @@ input {
   header {
     flex-direction: column;
   }
-  main{
+  section{
     flex-direction: column;
   }
   h2 {
@@ -147,7 +147,7 @@ input {
   header {
     flex-direction: column;
   }
-  main{
+  section{
     flex-direction: column;
   }
   h2 {
