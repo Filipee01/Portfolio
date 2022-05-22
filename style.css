@@ -27,7 +27,7 @@ header {
 
 .logo {
   flex-direction: column;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 li{
@@ -36,6 +36,22 @@ li{
 }
 
 a {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #05FF67;
+  transition: .3s all;
+}
+
+#subscribe {
+  border: solid #05FF67;
+  border-radius: 3rem;
+  padding: 1.5rem;
+}
+
+#subscribe:hover {
+  background-color: #05FF67;
   color: #FFFFFF;
 }
 
@@ -50,8 +66,8 @@ main {
 }
 
 h2 {
-  font-size: 5.6rem;
-  line-height: 7rem;
+  font-size: 5rem;
+  line-height: 6rem;
 }
 
 span {
@@ -59,6 +75,7 @@ span {
 }
 
 p {
+  margin-top: 1rem;
   line-height: 2rem;
   max-width: 50rem;
 }
@@ -67,3 +84,85 @@ img {
   width: 60rem;
   margin-left: 9rem;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+form [type="submit"] {
+  height: 4.5rem;
+  width: 50%;
+  background-color: #05FF67;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+form [type="submit"]:hover {
+  cursor: pointer;
+}
+
+input {
+  margin-top: 2rem;
+  height: 2rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    flex-direction: column;
+  }
+  main{
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 3.8rem;
+  }
+  form {
+    padding-top: 2rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  input {
+    align-self: center;
+  }
+  img {
+    margin-top: 6rem;
+    width: 30rem;
+  }
+  ul {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    flex-direction: column;
+  }
+  main{
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 3.8rem;
+  }
+  form {
+    padding-top: 2rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  input {
+    align-self: center;
+  }
+  img {
+    margin-block: 6rem;
+    width: 15rem;
+  }
+  ul {
+    text-align: center;
+  }
+}
+
