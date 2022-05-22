@@ -8,6 +8,10 @@
   font-size: 62.5%;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(34, 34, 34);
   color: #FFFFFF;
@@ -24,6 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 
 .logo {
   flex-direction: column;
@@ -116,6 +121,39 @@ input {
   font-size: 1.5rem;
 }
 
+.section2 {
+  margin-block: 15rem;
+}
+
+.wrapp-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section2 img {
+  width: 50rem;
+}
+
+.wrapp-images {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.wrapp-images img {
+  display: flex;
+  margin: 0 auto;
+  border: solid #05FF67;
+}
+
+.wrapp-images a {
+  text-decoration: none;
+  transition: .3s all;
+}
+
+
 @media screen and (max-width: 720px) {
   header {
     flex-direction: column;
@@ -137,8 +175,31 @@ input {
   img {
     margin-top: 6rem;
     width: 30rem;
+    margin-inline: 6rem;
   }
   ul {
+    text-align: center;
+  }
+  .wrapp-contain {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+  .wrapp-contain img{
+    width: 30rem;
+  }
+  .servic {
+    margin-top: 5rem;
+  }
+  .wrapp-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block: 5rem;
+  }
+  .wrapp-images img {
+    width: 35rem;
+  }
+  .wrapp-images a {
     text-align: center;
   }
 }
@@ -166,6 +227,28 @@ input {
     width: 15rem;
   }
   ul {
+    text-align: center;
+  }
+  .wrapp-contain {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+  .wrapp-contain img{
+    width: 30rem;
+  }
+  .servic {
+    margin-top: 5rem;
+  }
+  .wrapp-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block: 5rem;
+  }
+  .wrapp-images img {
+    width: 35rem;
+  }
+  .wrapp-images a {
     text-align: center;
   }
 }
