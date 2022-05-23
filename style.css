@@ -15,11 +15,10 @@ html, body {
 body {
   background-color: rgb(34, 34, 34);
   color: #FFFFFF;
-  font-family:'Poppins', sans-serif;;
-  max-width: 1200px;
+  font-family:'Poppins', sans-serif;
   margin: 0 auto;
   font-size: 1.6rem;
-  padding: 1.5rem;
+  
 }
 
 header {
@@ -27,6 +26,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1.5rem;
 }
 
 
@@ -67,7 +69,10 @@ h1{
 main {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   margin-top: 5rem;
+  max-width: 1200px;
+  padding: 1.5rem;
 }
 
 h2 {
@@ -153,6 +158,38 @@ input {
   transition: .3s all;
 }
 
+footer {
+  background-color: #05FF67;
+  height: 15rem;
+}
+
+.footer-finish {
+  text-align: center;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact img {
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  margin: 0;
+}
+
+.finish {
+  margin-top: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
 
 @media screen and (max-width: 720px) {
   header {
