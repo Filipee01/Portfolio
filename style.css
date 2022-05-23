@@ -150,6 +150,9 @@ input {
 .wrapp-images img {
   display: flex;
   margin: 0 auto;
+}
+
+.wrapp-images img:hover {
   border: solid #05FF67;
 }
 
