@@ -80,6 +80,11 @@ h2 {
   line-height: 6rem;
 }
 
+h3{
+  margin-top: 2rem;
+  font-size: 2.8rem;
+}
+
 span {
   color: #05FF67;
 }
@@ -95,45 +100,52 @@ img {
   margin-left: 9rem;
 }
 
+.image-ed {
+  margin-top: 1rem;
+  display: flex;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.image-ed img {
+  width: 15rem;
+  border-radius: 2rem;
+}
+
 .section1 {
   display: flex;
 }
 
-form {
+.mural {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
+}
+
+.avisos {
+  display: flex;
+  font-size: 4.1rem;
+  flex-direction: row;
   width: 70%;
 }
 
-form [type="submit"] {
-  height: 4.5rem;
-  width: 50%;
-  background-color: #05FF67;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-
-form [type="submit"]:hover {
-  cursor: pointer;
-}
-
-input {
-  margin-top: 2rem;
-  height: 2rem;
-  padding: 1.5rem;
-  border-radius: 2rem;
-  border: none;
-  font-size: 1.5rem;
+.avisos1 {
+  color: #05FF67;
 }
 
 .section2 {
-  margin-block: 15rem;
+  margin-block: 10rem;
 }
 
 .wrapp-contain {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10rem;
+}
+
+a{
+  text-decoration: none;
 }
 
 .section2 img {
@@ -141,21 +153,28 @@ input {
 }
 
 .wrapp-images {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
-  flex-direction: row;
-  gap: 10rem;
+  flex-direction: column;
+  
 }
 
-.wrapp-images img {
+.wrapp-images li{
   display: flex;
-  margin: 0 auto;
 }
 
-.wrapp-images img:hover {
-  border: solid #05FF67;
+.wrapp-notes span {
+  margin-left: 2rem;
 }
 
+.notesav {
+  margin-top: 3rem;
+}
+
+.notesf{
+  display: flex;
+  flex-direction: column;
+}
 .wrapp-images a {
   text-decoration: none;
   transition: .3s all;
