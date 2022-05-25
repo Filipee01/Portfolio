@@ -44,10 +44,10 @@
             desejado. Vamos simbora!!
           </p>
           <form>
-            <input type="text" placeholder="Nome" />
-            <input type="email" placeholder="E-mail" />
-            <input type="password" placeholder="Senha" />
-            <input type="submit" value="Enviar >" />
+            <input id="cep" type="text" placeholder="CEP" />
+            <input id="cidade" type="text" placeholder="Cidade" />
+            <input id="uf" type="text" placeholder="UF" />
+            <input id="btn" type="submit" value="Enviar >" />
           </form>
         </div>
         <div>
@@ -95,5 +95,19 @@
         <p>Site criado por &copy; Luiz Filipe</p>
       </div>
     </footer>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#cep").blur(function(){
+          var valor = $(this).val()
+          $.get("https://viacep.com.br/ws/"+valor+"/json/", function(dados, status){
+            console.log(dados)
+            $("#cidade").val(dados.localidade);
+            $("#uf").val(dados.uf)
+          })
+        })
+      })
+    </script>
   </body>
 </html>
+
