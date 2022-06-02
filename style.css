@@ -23,6 +23,11 @@ body {
 }
 
 header {
+  /* position: fixed;
+  width: 100vw;
+  right: 0;
+  left: 0;
+  top: 0; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,10 +37,19 @@ header {
   padding: 1.5rem;
 }
 
+/* header.scroll {
+  margin-left: 40rem;
+  background-color: black;
+  width: 100%;
+} */
 
 .logo {
   flex-direction: column;
   line-height: 3rem;
+}
+
+nav {
+  font-size: 1.8rem;
 }
 
 li{
@@ -84,44 +98,6 @@ h2 {
   line-height: 6rem;
 }
 
-.tracking-in-contract-bck-bottom {
-  -webkit-animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-
-@-webkit-keyframes tracking-in-contract-bck-bottom {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px) translateY(300px);
-            transform: translateZ(400px) translateY(300px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-contract-bck-bottom {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px) translateY(300px);
-            transform: translateZ(400px) translateY(300px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    opacity: 1;
-  }
-}
-
 
 h3{
   margin-top: 2rem;
@@ -139,13 +115,17 @@ p {
 }
 
 
-img {
+.image-profile {
+  border-radius: 50%;
+  padding: .4rem;
+  border: solid var(--generalColor);
   width: 35rem;
   margin-left: 28rem;
 }
 
 
 .section1 {
+  margin-top: 5rem;
   display: flex;
 }
 
@@ -157,12 +137,9 @@ img {
   width: 70%;
 }
 
-.avisos1 {
-  color: #05FF67;
-}
 
 .section2 {
-  margin-block: 10rem;
+  margin-top: 10rem;
 }
 
 .wrapp-contain {
@@ -172,44 +149,84 @@ img {
   margin-bottom: 10rem;
 }
 
+.wrapp-contain p {
+  font-size: 1.8rem;
+  width: 100%;
+  line-height: 3rem;
+}
+
 a{
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .section2 img {
   width: 50rem;
 }
 
+.learning{
+  margin-top: 8rem;
+}
+
 .wrapp-images {
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   
 }
 
-.wrapp-images li{
+.wrapp-images img{
+  margin-top: 2rem;
+  width: 15rem;
+}
+
+.images-skills{
   display: flex;
+  gap: 2rem;
 }
 
-.wrapp-notes span {
-  margin-left: 2rem;
-}
-
-.notesav {
-  margin-top: 3rem;
-}
-
-.notesf{
+.skills-name span {
   display: flex;
   flex-direction: column;
 }
-.wrapp-images a {
-  text-decoration: none;
-  transition: .3s all;
+
+.wrapp-images-bot {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.wrapp-images-bot img {
+  width: 15rem;
+}
+
+.section3 {
+  margin-top: 10rem;
+}
+
+.projects-git{
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-git a {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-git img{
+  margin-top: 2rem;
+  width: 50rem;
+}
+
+.projects-git img:hover{
+  border: solid var(--generalColor);
+  transition: .1s all;
 }
 
 footer {
-  background-color: #05FF67;
+  margin-top: 10rem;
+  background-color: var(--generalColor);
   height: 15rem;
 }
 
@@ -248,21 +265,26 @@ footer {
   section{
     flex-direction: column;
   }
+
+  .section1{
+    margin: 0;
+  }
   h2 {
-    font-size: 3.8rem;
+    font-size: 2.8rem;
   }
-  form {
-    padding-top: 2rem;
-    margin: 0 auto;
-    width: 100%;
+
+  .wrapp-content {
+    margin-top: 0;
+    text-align: center;
   }
-  input {
-    align-self: center;
+
+  .wrapp-content h3 {
+    font-size: 2rem;
   }
-  img {
+  .image-profile{
     margin-top: 6rem;
     width: 30rem;
-    margin-inline: 6rem;
+    margin-inline: 8.1rem;
   }
   ul {
     text-align: center;
@@ -271,32 +293,38 @@ footer {
     flex-direction: column;
     font-size: 1.5rem;
   }
-  .wrapp-contain img{
-    width: 30rem;
-  }
-  .servic {
-    margin-top: 5rem;
-  }
-  .wrapp-images {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-block: 5rem;
-  }
-  .wrapp-images img {
-    width: 35rem;
-  }
-  .wrapp-images a {
-    text-align: center;
+
+  .wrapp-contain p {
+    font-size: 1.5rem;
   }
 
-  .image-ed img {
-    margin: 0 auto;
-    width: 15rem;
-    border-radius: 2rem;
+  .wrapp-contain img{
+    margin-top: 5rem;
+    width: 30rem;
   }
-  .avisos {
-    font-size: 2.8rem;
+  
+  .wrapp-images img {
+    width: 10rem;
+  }
+
+  .wrapp-images-bot img {
+    width: 12rem;
+  }
+
+  .projects-git {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .projects-git img{
+    margin: 0 auto;
+    width: 40rem;
+  }
+
+  .projects-git a {
+    text-align: center;
   }
   
 }
@@ -308,20 +336,26 @@ footer {
   section{
     flex-direction: column;
   }
+
+  .section1{
+    margin: 0;
+  }
   h2 {
-    font-size: 3.8rem;
+    font-size: 2.8rem;
   }
-  form {
-    padding-top: 2rem;
-    margin: 0 auto;
-    width: 100%;
+
+  .wrapp-content {
+    margin-top: 0;
+    text-align: center;
   }
-  input {
-    align-self: center;
+
+  .wrapp-content h3 {
+    font-size: 2rem;
   }
-  img {
-    margin-block: 6rem;
-    width: 15rem;
+  .image-profile{
+    margin-top: 6rem;
+    width: 30rem;
+    margin-inline: 8.1rem;
   }
   ul {
     text-align: center;
@@ -330,34 +364,38 @@ footer {
     flex-direction: column;
     font-size: 1.5rem;
   }
+
+  .wrapp-contain p {
+    font-size: 1.5rem;
+  }
+
   .wrapp-contain img{
+    margin-top: 5rem;
     width: 30rem;
   }
-  .servic {
-    margin-top: 5rem;
-  }
-  .wrapp-images {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-block: 5rem;
-  }
+  
   .wrapp-images img {
-    width: 35rem;
+    width: 10rem;
   }
-  .wrapp-images a {
-    text-align: center;
+
+  .wrapp-images-bot img {
+    width: 12rem;
   }
-  .image-ed img {
+
+  .projects-git {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .projects-git img{
     margin: 0 auto;
-    width: 15rem;
-    border-radius: 2rem;
+    width: 40rem;
   }
-  .avisos {
-    font-size: 2.8rem;
-  }
-  .list {
-    font-size: 2.8rem;
+
+  .projects-git a {
+    text-align: center;
   }
   
 }

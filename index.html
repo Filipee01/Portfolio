@@ -17,7 +17,7 @@
     />
     <title>Filipe Dev</title>
   </head>
-  <body>
+  <body onscroll="onScroll()">
     <header>
       <div class="logo">
         <h1>Filipe</h1>
@@ -26,62 +26,58 @@
       <nav id="init">
         <ul>
           <a href="#init"><li>Início</li></a>
-          <a href="#mural1"><li>Avisos</li></a>
-          <a href="#list"><li>Listas</li></a>
-          <a href="#" id="subscribe" target="_blank"><li>Entre em contato</li></a>
+          <a href="#about"><li>Sobre</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#pro"><li>Projetos</li></a>
+          <a href="https://wa.link/or8zn2" id="subscribe" target="_blank"><li>Entre em contato</li></a>
         </ul>
       </nav>
     </header>
     <main>
       <section class="sections section1">
         <div class="wrapp-content">
-          <h2 class="tracking-in-contract-bck-bottom ">Olá, me chamo <span>Luiz Filipe</span></h2>
+          <h2>Olá, me chamo <span>Luiz Filipe</span></h2>
           <h3>Sou Desenvolvedor Front-end Jr</h3>
         </div>
         <div>
-          <img src="Images/EUU.png" alt="programming" />
+          <img class="image-profile" src="Images/EUU.png" alt="programming" />
         </div>
       </section>
       <section class="sections section2">
-        <h2 id="list">Lista de exercícios</h2>
+        <h2 id="about">Sobre</h2>
         <div class="wrapp-contain">
-          <ul>
-            <li>Listas de exercícios resolvidos de todo o assunto: <a href="http://www.fisica.ufpb.br/~edmundo/Fisica1-exercicios-resolvidos"><span>Cap 2 a 13</span></a></li>
-            <li>Lista de exercícios propostos I: <a href="http://www.fisica.ufpb.br/~edmundo/Listas-Fisica1/Fisica1-lista1.pdf"><span>Física1-lista1</span></a></li>
-            <li>Lista de exercícios propostos II: <a href="http://www.fisica.ufpb.br/~edmundo/Listas-Fisica1/Fisica1-lista2.pdf"><span>Física1-lista2</span></a></li>
-            <li>Lista de exercícios propostos III: <a href="http://www.fisica.ufpb.br/~edmundo/LISTA-fisica1-estagio-3"><span>Física1-Lista3</span></a></li>
-          </ul>
-          <img src="Images/undraw_geniuses_9h9g.svg" alt="" />
-        </div>
-        <h2 class="servic">Calendário Escolar</h2>
-        <div class="wrapp-images">
-          <h4"><span>Calendário das Avaliações:</span></h4>
-          <li><span>Prova 1:</span> data1=(cinemática em 1-D e em 2-D, Leis de Newton
-            e forças de atrito)</li>
-            <li><span>Prova 2:</span> data2=(teorema do trabalho-energia cinética, conservação de energia,
-              Sistemas de partículas e colisões em 1-D)</li>
-              <li><span>Prova 3:</span> data3=(cinemática e dinâmica da rotação de um corpo rígido)</li>
-              <li><span>Reposição 1:</span> data1=(assunto correspondente a prova 1)</li>
-              <li><span>Reposição 2:</span> data2=(assunto correspondente a prova 2)</li>
-              <li><span>Reposição 3:</span> data3=(assunto correspondente a prova 3)</li>
-              <li><span>Prova Final:</span> data-final (assunto das provas 1, 2, 3)</li>
-        </div>
-        <div class="wrapp-notes">
-          <h4>Como Calcular as Médias:</h4>
-          <span>MP=[(P1 ou R1)+(P2 ou R2)+(P3 ou R3)]/3
-            PF=prova final
-            MF=(6.MP+4.PF)/10</span>
-            <div class="notesf">
-              <h4 class="notesav">Notas das Avaliações:</h4>
-              <li>Notas da Prova 1:  </li>
-              <li>Notas da Prova 2:</li>
-              <li>Notas da Prova 3:</li>
-              <li>Notas da Reposição 1-2-3: </li>
-              <li>Nota Prova Final:</li>
-              <li>Nota Média Final:</li>
-            </div>
+          <p>Que bom ter você por aqui! Bom, para começar, me chamo Luiz Filipe, moro atualmente em João Pessoa-PB e sou estudante da UFPB. Minha história no mundo da programação se baseia no fato de ter visto um vídeo da NLW da Rocketseat, com isso eu fiquei fascinado com o que um indivíduo como eu, poderia fazer, utilizando apenas códigos que pareciam ser fáceis de aprender... Seguindo o fluxo, nunca mais parei e agora sigo firme na busca de me aperfeiçoar cada vez mais e conseguir meu primeiro emprego na área de tecnologia. Se você chegou até aqui, é um prazer!!</p>
+          <img src="Images/undraw_feeling_proud_qne1.svg" alt="" />
         </div>
       </section>
+        <h2 id="skills">Skills</h2>
+        <div class="wrapp-images">
+        <div class="skills-c">
+          <h3>Tenho conhecimentos em:</h3>
+        </div>
+        <div class="images-skills">
+          <img src="Images/logo html5.svg" alt="HTML">
+          <img src="Images/logo css.svg" alt="CSS">
+          <img src="Images/logo javascript.svg" alt="JS">
+          <img src="Images/git-icon-logo-svgrepo-com.svg" alt="GIT">
+        </div>
+        </div>
+        <h3 class="learning">Estou aprendendo:</h3>
+        <div class="wrapp-images-bot">
+          <img src="Images/react-svgrepo-com.svg" alt="REACT">
+          <img src="Images/icons8-servidor-php-100.png" alt="PHP">
+        </div>
+        <section class="section3">
+          <h2 id="pro">Projetos</h2>
+          <div class="projects-git">
+            <a href="https://filipee01.github.io/CALCULADORA-S/" target="_blank"><img src="Images/calc.PNG" alt="calculadora">Calculadora Js</a>
+            <a href="https://filipee01.github.io/Portifolio-eloyna/" target="_blank"><img src="Images/elo.png" alt="elo"> Portifólio Eloyna</a>
+          </div>
+          <div class="projects-git">
+            <a href="https://filipee01.github.io/Mude-sua-cor-de-fundo-/" target="_blank"><img src="Images/fundo.png" alt="calculadora">Mude sua cor de fundo</a>
+            <a href="https://filipee01.github.io/Cracha/" target="_blank"><img src="Images/crachazin.png" alt="calculadora">Crachá Nlw</a>
+          </div>
+        </section>
     </main>
     <footer id="contacte">
       <h3 class="footer-finish">Entre em contato:</h3>
@@ -94,6 +90,7 @@
         <p>Site criado por &copy; Luiz Filipe</p>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
 
