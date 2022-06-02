@@ -329,8 +329,10 @@ footer {
   
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   header {
+    display: flex;
+    margin-inline: 2rem;
     flex-direction: column;
   }
   section{
@@ -355,7 +357,7 @@ footer {
   .image-profile{
     margin-top: 6rem;
     width: 30rem;
-    margin-inline: 8.1rem;
+    margin-inline: 4.8rem;
   }
   ul {
     text-align: center;
