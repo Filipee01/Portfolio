@@ -6,6 +6,7 @@
 
 :root {
   font-size: 62.5%;
+  --generalColor: #28ACEC;
 }
 
 html, body {
@@ -47,18 +48,18 @@ a {
 }
 
 a:hover {
-  color: #05FF67;
+  color: var(--generalColor);
   transition: .3s all;
 }
 
 #subscribe {
-  border: solid #05FF67;
+  border: solid var(--generalColor);
   border-radius: 3rem;
   padding: 1.5rem;
 }
 
 #subscribe:hover {
-  background-color: #05FF67;
+  background-color: var(--generalColor);
   color: #FFFFFF;
 }
 
@@ -76,9 +77,51 @@ main {
 }
 
 h2 {
-  font-size: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 4.2rem;
   line-height: 6rem;
 }
+
+.tracking-in-contract-bck-bottom {
+  -webkit-animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck-bottom {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(300px);
+            transform: translateZ(400px) translateY(300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck-bottom {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(300px);
+            transform: translateZ(400px) translateY(300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
 
 h3{
   margin-top: 2rem;
@@ -86,7 +129,7 @@ h3{
 }
 
 span {
-  color: #05FF67;
+  color: var(--generalColor);
 }
 
 p {
@@ -95,32 +138,17 @@ p {
   max-width: 50rem;
 }
 
+
 img {
-  width: 60rem;
-  margin-left: 9rem;
+  width: 35rem;
+  margin-left: 28rem;
 }
 
-.image-ed {
-  margin-top: 1rem;
-  display: flex;
-  text-align: center;
-  border-radius: 2rem;
-}
-
-.image-ed img {
-  width: 15rem;
-  border-radius: 2rem;
-}
 
 .section1 {
   display: flex;
 }
 
-.mural {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5rem;
-}
 
 .avisos {
   display: flex;
