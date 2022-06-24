@@ -258,6 +258,11 @@ footer {
   }
   header {
     flex-direction: column;
+    width: 90%;
+    position: unset;
+    display: flex;
+    margin-inline: 2rem;
+    flex-direction: column;
   }
   section{
     flex-direction: column;
@@ -331,6 +336,8 @@ footer {
     text-align: center;
   }
   header {
+    width: 90%;
+    position: unset;
     display: flex;
     margin-inline: 2rem;
     flex-direction: column;
