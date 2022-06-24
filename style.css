@@ -342,6 +342,11 @@ footer {
     margin-inline: 2rem;
     flex-direction: column;
   }
+
+  main{
+    padding: 0;
+  }
+
   section{
     flex-direction: column;
   }
