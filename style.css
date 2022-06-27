@@ -270,10 +270,6 @@ footer {
   width: 30%;
 }
 
-.wrapp-content, .image-profile{
-  visibility: hidden;
-}
-
 @media screen and (max-width: 720px) {
   h1{
     text-align: center;
@@ -436,5 +432,8 @@ footer {
   
 }
 
+.wrapp-content, .image-profile{
+  visibility: hidden;
+}
 
 
