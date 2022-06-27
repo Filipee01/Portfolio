@@ -1,10 +1,11 @@
-function onScroll() {
-    if (scrollY > 0) {
-      document.querySelector('header').style.backgroundColor = 'rgb(34, 34, 34)'
+    function onScroll() {
+    if (scrollY > 140) {
+      document.querySelector('#top-buttonJs').classList.add('to-topp')
     } else {
-      document.querySelector('header').style.backgroundColor = ''
+      document.querySelector('#top-buttonJs').classList.remove('to-topp')
     }
   }
+  
   
   window.sr = ScrollReveal({ reset: true});
   
@@ -18,7 +19,7 @@ function onScroll() {
   sr.reveal('.wrapp-images-bot', { duration: 2000})
   sr.reveal('#pro', { duration: 2000})
   sr.reveal('.projects-git', { duration: 2000})
-  sr.reveal('footer', { duration: 2500})
+  sr.reveal('footer', { duration: 1200})
   
 
 

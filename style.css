@@ -34,6 +34,7 @@ header {
   margin: 0 auto;
   max-width: 1200px;
   padding: 1.5rem;
+  background-color: rgb(34, 34, 34);
   z-index: 9999;
 }
 
@@ -251,6 +252,21 @@ footer {
   justify-content: center;
   align-items: center;
   color: black;
+}
+
+.to-topp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-inline: 0.8rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  background-color:rgb(34, 34, 34);
+}
+
+.to-topp img {
+  width: 30%;
 }
 
 @media screen and (max-width: 720px) {
