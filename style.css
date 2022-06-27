@@ -263,10 +263,15 @@ footer {
   width: 5rem;
   border-radius: 100%;
   background-color:rgb(34, 34, 34);
+  border: 3px solid black;
 }
 
 .to-topp img {
   width: 30%;
+}
+
+.wrapp-content, .image-profile{
+  visibility: hidden;
 }
 
 @media screen and (max-width: 720px) {
@@ -431,7 +436,5 @@ footer {
   
 }
 
-.wrapp-content, .image-profile{
-  visibility: hidden;
-}
+
 
