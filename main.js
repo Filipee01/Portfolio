@@ -19,7 +19,6 @@
   sr.reveal('.wrapp-images-bot', { duration: 2000})
   sr.reveal('#pro', { duration: 2000})
   sr.reveal('.projects-git', { duration: 2000})
-  sr.reveal('footer', { duration: 1200})
   
 
 
