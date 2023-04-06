@@ -346,7 +346,7 @@ footer {
   .projects-git a {
     text-align: center;
   }
-  
+
 }
 
 @media screen and (max-width: 460px) {
@@ -429,6 +429,12 @@ footer {
   .projects-git a {
     text-align: center;
   }
+
+  #cv {
+   margin: 0 auto;
+   width: 5rem;
+  }
+  
   
 }
 
