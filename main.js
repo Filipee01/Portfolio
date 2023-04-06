@@ -7,7 +7,7 @@
   }
   
   
-  window.sr = ScrollReveal({ reset: true});
+  window.sr = ScrollReveal({ reset: false});
   
   sr.reveal('.wrapp-content', {duration: 1500})
   sr.reveal('.image-profile', { rotate:{ x:0, y:80, z:-20 }, duration: 1500 })
