@@ -6,7 +6,7 @@
 
 :root {
   font-size: 62.5%;
-  --generalColor: #28ACEC;
+  --generalColor: #06ff12;
 }
 
 html, body {
@@ -434,6 +434,23 @@ footer {
 
 .wrapp-content, .image-profile{
   visibility: hidden;
+}
+
+#cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--generalColor);
+  border-radius: 2rem;
+  border-color: var(--generalColor);
+  width: 20rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: unset;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600;
 }
 
 
