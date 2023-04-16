@@ -21,5 +21,13 @@
   sr.reveal('.projects-git', { duration: 1500})
   
 
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('#init ul');
+
+hamburgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+
 
   
