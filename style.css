@@ -617,7 +617,7 @@ footer {
 }
 
 #init ul.show a:hover {
-  color: #ffc107;
+  color: var(--generalColor);
 }
 
 
