@@ -6,7 +6,7 @@
 
 :root {
   font-size: 62.5%;
-  --generalColor: #06ff12;
+  --generalColor: #fffb00;
 }
 
 html, body {
@@ -346,6 +346,7 @@ footer {
   .projects-git a {
     text-align: center;
   }
+  
 
 }
 
@@ -382,7 +383,7 @@ footer {
   }
 
   .wrapp-content h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .image-profile{
     margin-top: 6rem;
@@ -434,6 +435,7 @@ footer {
    margin: 0 auto;
    width: 5rem;
   }
+  
   
   
 }
