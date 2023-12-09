@@ -262,7 +262,7 @@ footer {
   height: 5rem;
   width: 5rem;
   border-radius: 100%;
-  background-color:rgb(34, 34, 34);
+  background-color:transparent;
   border: 3px solid black;
 }
 
@@ -431,11 +431,11 @@ footer {
     text-align: center;
   }
 
-  #cv {
+  /* #cv {
    margin: 0 auto;
    width: 5rem;
   }
-  
+   */
   
   
 }
@@ -444,7 +444,10 @@ footer {
   visibility: hidden;
 }
 
-#cv {
+
+/*Depois voltar com essa estilização p/ colocar o CV
+
+/* #cv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,11 +462,10 @@ footer {
   text-transform: unset;
   font-family: 'Poppins', sans-serif; 
   font-weight: 600;
-}
+} */
 
-#cv:hover {
+/* #cv:hover {
   background-color: var(--generalColor);
   cursor: pointer;
-}
-
+} */
 
