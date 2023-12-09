@@ -350,7 +350,7 @@ footer {
 
 }
 
-@media screen and (max-width: 460px) {
+@media (max-width: 460px) {
   h1{
     text-align: center;
   }
@@ -437,7 +437,94 @@ footer {
   }
    */
   
+}
+
+
+@media (max-width: 460px) {
+  h1{
+    text-align: center;
+  }
+  header {
+    width: 90%;
+    position: unset;
+    display: flex;
+    margin-inline: 2rem;
+    flex-direction: column;
+  }
+
+  main{
+    padding: 0;
+  }
+
+  section{
+    flex-direction: column;
+  }
+
+  .section1{
+    margin: 0;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .wrapp-content {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .wrapp-content h3 {
+    font-size: 2rem;
+  }
+  .image-profile{
+    margin-top: 6rem;
+    width: 30rem;
+    margin-inline: 5rem;
+  }
+  ul {
+    text-align: center;
+  }
+  .wrapp-contain {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .wrapp-contain p {
+    font-size: 1.5rem;
+  }
+
+  .wrapp-contain img{
+    margin-top: 5rem;
+    width: 30rem;
+  }
   
+  .wrapp-images img {
+    width: 8rem;
+  }
+
+  .wrapp-images-bot img {
+    width: 11rem;
+  }
+
+  .projects-git {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .projects-git img{
+    margin: 0 auto;
+    width: 35rem;
+  }
+
+  .projects-git a {
+    text-align: center;
+  }
+
+  #cv {
+   margin: 0 auto;
+   width: 5rem;
+  }
 }
 
 .wrapp-content, .image-profile{
@@ -467,5 +554,6 @@ footer {
 /* #cv:hover {
   background-color: var(--generalColor);
   cursor: pointer;
-} */
+}
+
 
