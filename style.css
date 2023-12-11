@@ -531,9 +531,12 @@ footer {
   visibility: hidden;
 }
 
-.hamburger-menu{
-  visibility: hidden;
+.hamburger-menu {
+  border: none;
+  outline: none;
 }
+
+
 
 
 /*Depois voltar com essa estilização p/ colocar o CV
