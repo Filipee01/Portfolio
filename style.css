@@ -431,11 +431,11 @@ footer {
     text-align: center;
   }
 
-  /* #cv {
+  #cv {
    margin: 0 auto;
    width: 5rem;
   }
-   */
+  
   
 }
 
@@ -531,17 +531,14 @@ footer {
   visibility: hidden;
 }
 
-.hamburger-menu {
-  border: none;
-  outline: none;
+.hamburger-menu{
+  visibility: hidden;
 }
 
 
+/* colocar o CV */ 
 
-
-/*Depois voltar com essa estilização p/ colocar o CV
-
-/* #cv {
+ #cv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -556,9 +553,9 @@ footer {
   text-transform: unset;
   font-family: 'Poppins', sans-serif; 
   font-weight: 600;
-} */
+} 
 
-/* #cv:hover {
+ #cv:hover {
   background-color: var(--generalColor);
   cursor: pointer;
 }
