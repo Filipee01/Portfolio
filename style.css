@@ -440,7 +440,7 @@ footer {
 }
 
 
-@media (max-width: 460px) {
+/* @media (max-width: 460px) {
   h1{
     text-align: center;
   }
@@ -525,15 +525,84 @@ footer {
    margin: 0 auto;
    width: 5rem;
   }
-}
+} */
 
 .wrapp-content, .image-profile{
   visibility: hidden;
 }
 
 .hamburger-menu{
-  visibility: hidden;
+  display: none;
 }
+
+@media (max-width: 470px) {
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+  }
+
+  .hamburger-menu-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform 0.2s ease-out;
+  }
+
+  
+
+  ul {
+    display: none;
+  }
+
+  .hamburger-menu-bar:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+#init ul.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(34, 34, 34);
+  z-index: 999;
+}
+
+#init ul.show li {
+  margin: 0;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+#init ul.show li:last-child {
+  border-bottom: none;
+}
+
+#init ul.show a {
+  color: white;
+}
+
+#init ul.show a:hover {
+  color: #ffc107;
+}
+
+
 
 
 /* colocar o CV */ 
